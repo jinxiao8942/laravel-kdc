@@ -1,0 +1,68 @@
+.purechat-button-expand img {
+    height: 24px;
+    margin-left: 6px !important;
+    margin-top: -4px;
+}
+
+.purechat-button-expand.purechat-button-available {
+    border: 0 !important;
+    background: transparent !important;
+}
+button.purechat-button-expand {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    height: 28px !important;
+    width: 108px !important;
+    padding: 0;
+    text-align: right;
+    margin-top: 0px;
+    margin-right: -5px;
+}
+#burgerNav button.purechat-button-expand{
+    width: 30px !important;
+}
+.purechat-widget .purechat-poweredby-container, .purechat-window .purechat-poweredby-container, .purechat-widget img, .purechat-window img {
+    display: none;
+}
+.purechat-expanded {
+    border: 1px solid #1f6588 !important;
+}
+.purechat-widget .purechat-widget-title-link, .purechat-window .purechat-widget-title-link {
+    color: #1f6588;
+    font-family: 'Bitter';
+}
+.purechat-widget .purechat-enterinfo-container p, .purechat-window .purechat-enterinfo-container p {
+    color: #1f6588;
+    font-family: 'Roboto';
+}
+.purechat-widget .btn [class^="pc-icon-"], .purechat-window .btn [class^="pc-icon-"], .purechat-widget .btn [class*=" pc-icon-"], .purechat-window .btn [class*=" pc-icon-"] {
+    color: #1f6588;
+}
+.purechat-widget .purechat-init-form input, .purechat-window .purechat-init-form input, .purechat-widget .purechat-init-form textarea, .purechat-window .purechat-init-form textarea, .purechat-widget .purechat-email-form input, .purechat-window .purechat-email-form input, .purechat-widget .purechat-email-form textarea, .purechat-window .purechat-email-form textarea {
+    border-radius: 0px;
+    border: 1px solid #1f6588 !important;
+    height: 38px;
+    padding-left: 10px;
+    color: #1f6588;
+}
+.purechat-widget .purechat-init-form .btn, .purechat-window .purechat-init-form .btn, .purechat-widget .purechat-email-form .btn, .purechat-window .purechat-email-form .btn {
+    color: #fff;
+    background: #1f6588;
+    height: 33px !important;
+    border-radius: 7px;
+    font-family: 'Bitter';
+}
+.purechat-widget .purechat-send-form-message, .purechat-window .purechat-send-form-message {
+    border: 1px solid #1f6588 !important;
+    border-radius: 0;
+    color: #2b333c;
+    font-family: 'Roboto';
+    padding: 5px !important;
+}
+.purechat-widget .purechat-message span.purechat-displayname, .purechat-window .purechat-message span.purechat-displayname {
+    color: #1f6588;
+}
+.purechat-widget .purechat-message span, .purechat-window .purechat-message span {
+    color: #2b333c;
+}

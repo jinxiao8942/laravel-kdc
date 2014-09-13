@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/croppic.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,500' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+                    
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/ckeditor.js"></script>
+        <script src="js/croppic.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/main.js"></script>
+        
+        <script>
+            $(document).ready( function() {
+                leftNav();
+                ckeditor();
+                fakeCheck();
+                slideImageUpload();
+                croppicInit();
+                datePicker();
+            });
+        </script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="container">
+            <div id="header">
+                <div id="headerInner" class="inner">
+                    <div id="navTabs">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-home"></i></a>
+                            </li>
+                            <li class="active">
+                                <a href="#">RESOURCE</a>
+                            </li>
+                            <li>
+                                <a href="#">GROUP</a>
+                            </li>
+                            <li>
+                                <a href="#">PROJECT</a>
+                            </li>
+                        </ul>
+                        <h1>KDC Global Content Management</h1>
+                    </div>
+                </div> <!-- end header inner -->
+                <div id="navMisc">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a href="#">CMS Admin</a> |
+                            </li>
+                            <li>
+                                <a href="#">Analytics</a> |
+                            </li>
+                            <li>
+                                <a href="#">Dougal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end navmisc -->
+            </div> <!-- end header -->
+            
+            <div id="main">
+                <div id="mainInner" class="inner">
+                    <div id="navLeft">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-th-list"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-home"></i>Home</a>
+                            </li>
+                            <li class="hasSub active open">
+                                <a href="#"><i class="fa"><img src="img/nav-news-icon.png" /></i>News</a>
+                                <ul>
+                                    <li class="active">
+                                        <a href="#">Add News<i class="fa fa-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News Archive<i class="fa fa-circle"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa"><img src="img/nav-about-icon.png" /></i>About Us</a>
+                            </li>
+                            <li class="hasSub">
+                                <a href="#"><i class="fa fa-comment"></i>Testimonials</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Blah<i class="fa fa-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blah<i class="fa fa-circle"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasSub">
+                                <a href="#"><i class="fa fa-user"></i>Candidate</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Blah<i class="fa fa-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blah<i class="fa fa-circle"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div id="content">
+                        <h1>Add New News Story</h1>
+                        <form>
+                            <div class="formElement">
+                                <label>
+                                    Title <span>Main title for the news story</span>
+                                </label>
+                                <input type="text">
+                            </div>
+                            <div class="formElement">
+                                <label>
+                                    Introduction <span>Body text visible on the news module</span>
+                                </label>
+                                <textarea name="newsIntroEditor" id="newsIntroEditor" rows="10" cols="80">
+                                </textarea>
+                            </div>
+                            <div class="formElement">
+                                <label>
+                                    Main copy <span>Main story content</span>
+                                </label>
+                                <textarea name="newsMainEditor" id="newsMainEditor" rows="10" cols="80">
+                                </textarea>
+                            </div>
+                            
+                            <div class="formElement slider">
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fakeCheck"></span>
+                                        Upload Image <span>Optional</span>
+                                    </label>
+                                </p>
+                                <div class="slideContent">
+                                    <div class="formElement">
+                                        <div id="imageUpload">
+                                        </div>
+                                        <div class="uploadText">
+                                            <p>Click the upload icon<br />
+                                                then choose your image
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="formElement">
+                                        <label>
+                                            Image title <span>Name the image</span>
+                                        </label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="formElement">
+                                        <label>
+                                            Image alternative text <span>Describe the image</span>
+                                        </label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formElement small">
+                                <label>
+                                    Choose Date <span>Date to be displayed on the news module</span>
+                                </label>
+                                <input type="text" class="datePicker">
+                            </div>
+                            
+                            <div class="formElement">
+                                <label>
+                                    URL <span>Not sure what this is for</span>
+                                </label>
+                                <input type="text">
+                            </div>
+                            
+                            <div class="formElement">
+                                <label>
+                                    SEO description <span>Describe the news stroy</span>
+                                </label>
+                                <input type="text">
+                            </div>
+                            <div class="formElement">
+                                <label>
+                                    SEO keywords <span>Describe the news stroy</span>
+                                </label>
+                                <input type="text">
+                            </div>
+                            
+                            <input type="submit" value="UPLOAD" class="upload">
+                            
+                        </form>
+                    </div> <!-- end content -->
+                </div>
+            </div>
+        </div> <!-- end container -->
+
+    </body>
+</html>

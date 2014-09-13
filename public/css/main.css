@@ -1,0 +1,838 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    color: #707070;
+    font-family: 'Roboto';
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.inner {
+    width: 1050px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+}
+#container {
+    height: 100%;
+    width: 100%;
+    background: #fbfbfb;
+}
+#header {
+    width: 100%;
+    height: 102px;
+    background: #00aeef url('../img/header-bg.jpg') 50% 0 no-repeat; /*#00aeef*/
+    position: relative;
+    overflow: hidden;
+}
+#headerInner{
+    height: 71px;
+    position: relative;
+}
+#headerSearch {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 32px;
+    width: 59px;
+    background: #00c0f3;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+#headerSearch i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    /* width: 58px; */
+    background: #00c0f3;
+    z-index: 999;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 11px;
+}
+#searchBar {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 59px;
+    overflow: hidden;
+}
+#searchBar input {
+    width: 300px;
+    background: #f1f2f5;
+    border: 1px solid #c2c2c2;
+    font-family: inherit;
+    color: #707070;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 13px 10px;
+    outline: none;
+    -webkit-box-shadow:inset 2px 2px 5px 0 rgba(32, 28, 28, 0.1);
+    box-shadow: inset 2px 2px 5px 0 rgba(32, 28, 28, 0.1);
+}
+#navTabs {
+    overflow: hidden;
+    padding-top: 31px;
+}
+#navTabs ul {
+    padding-left: 28px;
+    float: left;
+}
+#navTabs li {
+    display: inline-block;
+    background: #d7d7d7;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-right: 2px;
+}
+#navTabs li:hover, #navTabs li.active{
+    background: #3c3533;
+}
+#navTabs li.active a, #navTabs li:hover a {
+    color: #00aeef;
+}
+#navTabs li a {
+    color: #3c3533;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    min-width: 66px;
+    padding: 12px 7px;
+}
+#navTabs li i {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+    min-width: 66px;
+    line-height: 0;
+    vertical-align: middle;
+}
+#navTabs h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    float: left;
+    margin: 8px 0 0 10px;
+}
+#navMisc {
+    width: 100%;
+    background: #3c3533;
+    text-align: right;
+}
+#navMisc li {
+    display: inline-block;
+    color: #00aeef;
+    font-size: 8px;
+    margin: 7px 10px 8px 0;
+}
+#navMisc li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+#main {
+    width: 100%;
+    min-height: 100%;
+    background: #fbfbfb;
+}
+#mainInner {
+    overflow: hidden;
+    background: #fbfbfb;
+}
+#navLeft {
+    background: #f1f2f5;
+    border-left: 1px solid #c2c2c2;
+    width: 240px;
+    float: left;
+    position: relative;
+}
+#navLeft ul {
+    list-style: none;
+    padding: 0;
+}
+#navLeft li {
+    border-top: 1px solid #fbfbfb;
+    border-bottom: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+}
+#navLeft li i {
+    width: 30px;
+    color: #00aeef;
+}
+#navLeft li a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    display: inline-block;
+    height: 100%;
+    width: 208px;
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#navLeft ul ul {
+    display: none;
+}
+#navLeft li.hasSub {
+    background: url('../img/caret-down.png') 203px 14px no-repeat;
+}
+#navLeft li.hasSub.open {
+    background: #fbfbfb url('../img/caret-up.png') 203px 14px no-repeat;
+    border-bottom: 0;
+    border-right: 0;
+}
+#navLeft li.hasSub.open li {
+    border-right: 0;
+}
+#navLeft .hasSub.open ul li:first-child {
+    border-top: 1px solid #c2c2c2;
+}
+#navLeft ul li:hover a, #navLeft ul li.active a {
+    color: #3c3533;
+}
+#navLeft ul ul li a {
+    font-size: 12px;
+    padding-left: 75px;
+    width: 163px;
+}
+#navLeft ul ul li:hover i, #navLeft ul ul li.active a i{
+    display: block;
+}
+#navLeft ul ul li:hover a, #navLeft ul ul li.active a  {
+    color: #00aeef;
+}
+#navLeft ul ul li a i {
+    float: right;
+    display: none;
+    font-size: 10px;
+    margin-top: 3px;
+}
+#content {
+    float: left;
+    padding-left: 46px;
+    width: 763px;
+    background: url('../img/content-bg.png') 100% 0 no-repeat;
+    padding-top: 46px;
+    border-left: 1px solid #c2c2c2;
+    margin-left: -1px;
+    padding-bottom: 80px;
+}
+#content h1 {
+    margin: 0;
+    color: #00aeef;
+    font-weight: 200;
+    font-size: 25px;
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+#content h1 > span {
+    text-align: right;
+    float: right;
+    font-size: 15px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+#content h1 > span span {
+    font-weight: 200;
+}
+#content p.note {
+    margin-top: 0;
+    font-weight: 200;
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 10px;
+}
+.alphabet {
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+.alphabet ul {
+    margin: 0;
+    padding: 0;
+}
+.alphabet li {
+    display: inline-block;
+}
+.alphabet li span {
+    color: #c2c2c2;
+    font-weight: 200;
+    font-size: 10px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-left: 3px;
+}
+.alphabet a {
+    color: #00aeef;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 200;
+    display: inline-block;
+    border-radius: 50%;
+    width: 26px;
+    text-align: center;
+    margin-right:-3px;
+}
+.alphabet a:hover {
+    background: #00aeef;
+    color: #fff;
+}
+.formElement {
+    margin-bottom: 30px;
+    position: relative;
+}
+.formElement.small input {
+    width: 300px;
+}
+.formElement label {
+    display: block;
+    color: #00aeef;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.formElement label span {
+    color: #707070;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.formElement input,.formElement textarea {
+    width: 741px;
+    background: #f1f2f5;
+    border: 1px solid #c2c2c2;
+    font-family: inherit;
+    color: #707070;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 13px 10px;
+    outline: none;
+    -webkit-box-shadow:inset 2px 2px 5px 0 rgba(32, 28, 28, 0.1);
+    box-shadow: inset 2px 2px 5px 0 rgba(32, 28, 28, 0.1);
+}
+.formElement.small i {
+    font-size: 35px;
+    color: #00aeef;
+    position: absolute;
+    top: 35px;
+    left: 334px;
+}
+.formElement.small .ui-datepicker-trigger {
+    margin-left: 4px;
+    margin-top: -4px;
+    cursor: pointer;
+}
+.formElement .slideContent {
+    display: none;
+}
+.formElement.slider {
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 15px;
+}
+span.fakeCheck {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background: url('../img/fake-check-unchecked.png');
+    margin-left: 0 !important;
+    margin-bottom: -4px;
+}
+span.fakeCheck.checked {
+    background: url('../img/fake-check-checked.png');
+}
+.formElement input[type="checkbox"] {
+    display: none;
+}
+#imageUpload {
+    width: 760px;
+    height: 300px;
+    color: #707070;
+    position:relative;
+    background: #f1f2f5;
+    border: 1px solid #c2c2c2;
+    -webkit-box-shadow:inset 2px 2px 5px 0 rgba(32, 28, 28, 0.1);
+    box-shadow: inset 2px 2px 5px 0 rgba(32, 28, 28, 0.1);
+}
+.uploadText {
+    font-weight: 300;
+    width: 760px;
+    height: 100px;
+    position: absolute;
+    top: 38px;
+    text-align: center;
+    font-size: 17px;
+}
+.btn {
+    background: #00aeef;
+    color: #fff;
+    border: 0;
+    padding: 3px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.upload {
+    background: #00aeef;
+    color: #fff;
+    border: 0;
+    padding: 13px 25px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+.editNewsContainer {
+    display: none;
+}
+.newsFilter p {
+    display: inline-block;
+    margin: 0;
+}
+
+table.list {
+    width: 100%;
+    margin-top: 10px;
+}
+table.list td {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c2c2c2;
+}
+table.list td.name a {
+    color: #00aeef;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 19px;
+}
+table.list td.joined {
+    text-align: right;
+    font-weight: 200;
+    font-size: 14px;
+}
+table.list td.joined span {
+    font-weight: 400;
+}
+table.list td.view {
+    text-align: center;
+}
+table.list td.view .btn, .profileHead .btn {
+    background: #c2c2c2;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+table.list td.view .btn:hover, .profileHead .btn:hover, .profileImage .removeImage:hover {
+    background: #00aeef;
+}
+table.list td.delete i {
+    text-align: center;
+    color: #c2c2c2;
+    font-size: 20px;
+}
+table.list td.delete i:hover {
+    color: #00aeef;
+}
+
+#content h1.profileHead span {
+    color: #00aeef;
+}
+#content h1.profileHead span span {
+    font-weight: 400;
+    margin-left: 30px;
+    color: #707070;
+}
+#content h1.profileHead span span span {
+    font-weight: 300;
+    margin-left: 0px;
+}
+#candDetails label {
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #00aeef;
+    font-weight: 200;
+    font-size: 20px;
+}
+.col {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.col-3 {
+    width: 33%;
+}
+.col-6 {
+    width: 66%;
+}
+.np-l {
+    padding-left: 0;
+}
+.np-r {
+    padding-right: 0;
+}
+.pull-right {
+    float: right;
+}
+.profileImage img {
+    max-width: 154px;
+}
+.profileImage .removeImage {
+    display: block;
+    margin-top: -39px;
+    width: 47px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 43px;
+    background: #c2c2c2;
+    color: #fff;
+}
+.profileImage {
+    padding-bottom: 30px;
+}
+#candDetails p, #candDetails input {
+    margin: 0;
+    padding: 11px 10px;
+    background: #fbfbfb;
+    border: 1px solid #c2c2c2;
+    font-weight: 300;
+    margin-bottom: 22px;
+    display: block;
+    width: 90%;
+}
+#candDetails .nav {
+    padding-bottom: 220px;
+}
+#candDetails .nav a {
+    display: block;
+    max-width: 154px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background: #c2c2c2;
+}
+#candDetails .nav a.back {
+    font-size: 12px;
+    padding: 5px 0;
+    background: #707070;
+    
+}
+#candDetails .nav a i {
+    color: #fff;
+    margin-right: 10px;
+}
+#candDetails .nav a:hover, #candDetails .nav a.active {
+    background: #00aeef;
+}
+.nav hr {
+    width: 154px;
+    margin-top: 50px;
+}
+#candDetails .divider {
+    width: 65.5%;
+    float: right;
+    margin-right: 10px;
+}
+#candDetails h2 {
+    font-weight: 200;
+}
+.userForm { padding-bottom: 25px;padding-left: 25px;padding-top: 25px;width: 500px; }
+.userForm input { width: 450px; }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
